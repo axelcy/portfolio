@@ -1,0 +1,28 @@
+.proyecto img{
+    border-radius: 15px;
+    height: 10rem;
+    border: 2px solid rgba(255, 255, 255, .25);
+    
+}
+
+.proyecto{
+    --proyecto-padding: .5rem;
+    padding: var(--proyecto-padding);
+    margin: 1rem;
+    border: 2px solid var(--white);
+    border-radius: calc((var(--proyecto-padding) + 15px) / 2);
+    width: fit-content;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.proyecto:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 2px solid rgba(224, 0, 0, .75);
+}
+.proyecto h2{
+    margin: 0;
+    color: var(--black);
+    filter: drop-shadow(0 5px 10px var(--black));
+}

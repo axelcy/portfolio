@@ -1,3 +1,4 @@
+import Proyecto from '../components/Proyecto'
 import './styles/Proyectos.css'
 
 const Proyectos = () => {
@@ -8,7 +9,7 @@ const Proyectos = () => {
             <h1>Mis proyectos</h1>
             <p className='code-block'>{'</h1>'}</p>
             <p className='code-block'>{'</p>'}</p>
-            <p className='strong code-block'>Full Stack Developer /</p>
+                <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' />
             <p className='code-block'>{'</p>'}</p>
         </main>
     )
