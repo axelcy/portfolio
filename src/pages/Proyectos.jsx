@@ -9,11 +9,10 @@ const Proyectos = () => {
                 <h1 className='code-padding'>Mis proyectos</h1>
                 <p className='code-block'>{'</h1>'}</p>
             </header>
-                <section className='lista-proyectos'>
-                    <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' />
-                    <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' />
-                    <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' />
-                </section>
+            <section className='lista-proyectos'>
+                <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' url='https://valo-ranks.netlify.app/' />
+                <Proyecto name='Eco Password' image='/eco-password.png' url='https://eco-password.netlify.app/' />
+            </section>
         </main>
     )
 }
