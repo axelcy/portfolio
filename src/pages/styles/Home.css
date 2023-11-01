@@ -19,3 +19,10 @@ h1{
 .strong{
     font-weight: 700;
 }
+
+.gradiant-text{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,192,0,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
