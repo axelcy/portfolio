@@ -25,5 +25,5 @@
 .proyecto h2{
     margin: 0;
     color: var(--black);
-    filter: drop-shadow(0 5px 10px var(--black));
+    filter: drop-shadow(0 5px 10px rgba(167, 0, 0, 0.75));
 }

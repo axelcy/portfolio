@@ -12,6 +12,7 @@ const Proyectos = () => {
             <section className='lista-proyectos'>
                 <Proyecto name='Chinchu-Ranks' image='/chinchu-ranks.png' url='https://valo-ranks.netlify.app/' />
                 <Proyecto name='Eco Password' image='/eco-password.png' url='https://eco-password.netlify.app/' />
+                <Proyecto name='ORT Resuelve' image='/ort-resuelve.png' url='https://axelcy.github.io/reportes-ort/' />
             </section>
         </main>
     )
