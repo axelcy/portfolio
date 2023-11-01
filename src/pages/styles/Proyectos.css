@@ -1,0 +1,7 @@
+.lista-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 10rem;
+}
+
