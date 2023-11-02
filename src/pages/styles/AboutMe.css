@@ -77,7 +77,7 @@
   letter-spacing: 2px;
 }
 
-.link-form::after{
+.link-form:hover::after{
   --form-color-submit: rgb(184, 125, 0);
   background-color: var(--form-color-submit);
   box-shadow: 0 5px 10px var(--form-color-submit);
@@ -85,5 +85,4 @@
 .nav-link:hover{
   transition: .5s all ease;
   transform: scale(1.1);
-
 }
