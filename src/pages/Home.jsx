@@ -5,6 +5,7 @@ const Home = () => {
         'React.JS',
         'Node.JS',
         'Express.JS',
+        'TypeScript',
         'MsSQL',
         'Sigma',
         'GitHub',
@@ -21,7 +22,13 @@ const Home = () => {
                 </header>
                 <div>
                     <p className='code-block'>{'<p>'}</p>
-                    <p className='strong code-block code-padding'>Full Stack Developer /</p>
+                        <p className='strong code-padding'>Full Stack Developer /</p>
+                        <p className='code-block code-padding'>{'<a>'}</p>
+                            <a className='strong code-padding-2 github-link' 
+                                href='https://github.com/axelcy' target='_blank'>
+                                github.com/axelcy
+                            </a>
+                        <p className='code-block code-padding'>{'<a>'}</p>
                     <p className='code-block'>{'</p>'}</p>
                 </div>
             </section>
