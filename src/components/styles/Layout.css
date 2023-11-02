@@ -9,14 +9,16 @@ footer {
     border-radius: 32px;
     opacity: .95;
     backdrop-filter: blur(8px);
-    transition: all .5s ease;
+    transition: all .3s ease;
     max-width: 600px;
+    /* width: 300px; */
     overflow: hidden;
     display: flex;
     gap: 5px;
     flex-direction: row;
     align-items: center;
 }
+
 footer img {
     height: 100%;
     --imgWidth: 32px;
@@ -28,6 +30,15 @@ footer img {
     border-radius: 5px;
 }
 
+footer p{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    transition: all 1s;
+}
+
+.footer-hovered{
+}
 
 
 nav{

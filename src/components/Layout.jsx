@@ -24,7 +24,7 @@ const Layout = () => {
             <Outlet />
             <footer>
                 <img alt='Footer image' src='/favicon.jpg' />
-                <span>Hecho con ❤ por Axel y Jero</span>
+                <p>Hecho con ❤ por Axel y Jero</p>
             </footer>
         </>
     )
