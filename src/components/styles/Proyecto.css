@@ -21,9 +21,24 @@
     cursor: pointer;
     transform: scale(1.1);
     border: 2px solid rgba(224, 0, 0, .75);
+    border-color: linear-gradient(90deg, rgb(167, 0, 0) 0%, rgb(255, 208, 0) 35%);
 }
 .proyecto h2{
     margin: 0;
     color: var(--black);
     filter: drop-shadow(0 5px 10px rgba(167, 0, 0, 0.75));
+}
+
+.proyecto:hover ~ .code-block {
+    /* color: rgba(224, 0, 0, .75); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(167, 0, 0) 0%, rgb(255, 208, 0) 35%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hovered {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(167, 0, 0) 0%, rgb(255, 208, 0) 35%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
