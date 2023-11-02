@@ -29,6 +29,7 @@ body{
   font-size: 1rem;
   background-color: var(--black);
   background: url('/layered-peaks-haikei.svg');
+  /* background: linear-gradient(#141e30, #243b55); */
   background-size: cover;
 }
 

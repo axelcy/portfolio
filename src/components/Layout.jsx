@@ -23,7 +23,8 @@ const Layout = () => {
             </nav>
             <Outlet />
             <footer>
-                {/* poner el footer del proyecto final */}
+                <img alt='Footer image' src='/favicon.jpg' />
+                <span>Hecho con ❤ por Axel y Jero</span>
             </footer>
         </>
     )
