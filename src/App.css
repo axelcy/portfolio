@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.padding-left {
+    padding-left: 15rem;
+}
+.padding-right {
+    padding-right: 15rem;
+}
+
+.code-padding {
+    padding-left: 3rem;
+}
+
+.code-padding-right {
+    padding-right: 3rem;
+}
+
+h1{
+    margin: 0;
+    font-size: 5rem;
+}
+h2{
+    margin: 0;
+    font-size: 3rem;
+}
+h3{
+    margin: 0;
+    font-size: 1.5rem;
+}

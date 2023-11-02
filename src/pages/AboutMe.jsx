@@ -11,6 +11,11 @@ const AboutMe = () => {
     }
     return(
     <main style={{alignItems: 'center', paddingLeft: 0}}>
+        {/* <header>
+            <p className='code-block'>{'<h1>'}</p>
+                <h1 className='code-padding'>This is a <span className='gradient-text'>coool</span> title to login</h1>
+            <p className='code-block'>{'</h1>'}</p>
+        </header> */}
         <section>   
         <p className='code-block'>{'<form>'}</p>
             <div className='code-padding'>

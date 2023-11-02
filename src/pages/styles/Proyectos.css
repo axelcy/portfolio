@@ -9,5 +9,10 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgb(0, 255, 170) 0%, rgb(0, 81, 255) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+}
+
+.proyectos{
+    padding-left: 15rem;
 }

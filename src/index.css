@@ -1,6 +1,6 @@
 :root{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   line-height: 1.5;
   font-weight: 400;
@@ -31,16 +31,4 @@ body{
   background: url('/layered-peaks-haikei.svg');
   /* background: linear-gradient(#141e30, #243b55); */
   background-size: cover;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.padding-left{
-  padding-left: 15rem;
-}
-.code-padding{
-  padding-left: 3rem;
 }

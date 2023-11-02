@@ -3,7 +3,7 @@ import './styles/Proyectos.css'
 
 const Proyectos = () => {
     return (
-        <main>
+        <main className='proyectos'>
             <header>
                 <p className='code-block'>{'<h1>'}</p>
                 <h1 className='code-padding'>Mis <span className='gradient-text-2'>proyectos</span>!</h1>
