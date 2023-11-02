@@ -5,7 +5,7 @@ const AboutMe = () => {
     const [session, setSession] = useState({})
 
     const handleChange = e => setSession(session => ({...session, [e.target.name]: e.target.value }))
-    
+
     const handleSubmit = e => {
         e.preventDefault()
     }
@@ -15,14 +15,14 @@ const AboutMe = () => {
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <div class="user-box">
-                    <input type="text" name="user" required />
+                    <input type="text" name="user" required autoComplete='off' />
                     <label>Usuario</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="pass" required />
+                    <input type="password" name="pass" required autoComplete='off' />
                     <label>Contraseña</label>
                 </div>
-                <button type='submit' className='nav-link link-purple'>Ingresar</button>
+                <button type='submit' className='nav-link link-form'>Ingresar</button>
             </form>
         </div>
     </main>
