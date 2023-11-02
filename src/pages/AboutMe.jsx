@@ -10,21 +10,27 @@ const AboutMe = () => {
         e.preventDefault()
     }
     return(
-    <main>
-        <div class="login-box">
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
-                <div class="user-box">
-                    <input type="text" name="user" required autoComplete='off' />
-                    <label>Usuario</label>
-                </div>
-                <div class="user-box">
-                    <input type="password" name="pass" required autoComplete='off' />
-                    <label>Contraseña</label>
-                </div>
-                <button type='submit' className='nav-link link-form'>Ingresar</button>
-            </form>
-        </div>
+    <main style={{alignItems: 'center', paddingLeft: 0}}>
+        <section>   
+        <p className='code-block'>{'<form>'}</p>
+            <div className='code-padding'>
+                <article className='login-box'>
+                    <h2>Login</h2>
+                    <form onSubmit={handleSubmit}>
+                        <div className='user-box'>
+                            <input type='text' name='user' required autoComplete='off' />
+                            <label>{"<input name='Usuario' />"}</label>
+                        </div>
+                        <div className='user-box'>
+                            <input type='password' name='pass' required autoComplete='off' />
+                            <label>{"<input name='Contraseña' />"}</label>
+                        </div>
+                        <button type='submit' className='nav-link link-form'>{"<button type='submit' />"}</button>
+                    </form>
+                </article>
+            </div>
+        <p className='code-block'>{'</from>'}</p>
+        </section>
     </main>
     )
 }
