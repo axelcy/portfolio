@@ -6,7 +6,7 @@ const Proyectos = () => {
         <main>
             <header>
                 <p className='code-block'>{'<h1>'}</p>
-                <h1 className='code-padding'>Mis proyectos</h1>
+                <h1 className='code-padding'>Mis <span className='gradient-text-2'>proyectos</span>!</h1>
                 <p className='code-block'>{'</h1>'}</p>
             </header>
             <section className='lista-proyectos'>

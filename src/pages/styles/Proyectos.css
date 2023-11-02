@@ -4,3 +4,10 @@
     gap: 3rem;
     padding-left: 10rem;
 }
+
+.gradient-text-2{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(0, 255, 170) 0%, rgb(0, 81, 255) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}

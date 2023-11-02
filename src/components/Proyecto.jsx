@@ -6,9 +6,13 @@ const Proyecto = ({ name, image, url }) => {
     const handleClick = () => window.open(url, '_blank')
     
     return (
-        <article className='proyecto' onClick={handleClick}>
-            <h2>{name}</h2>
-            <img src={`/proyectos/${image}`} />
+        <article>
+            <p className='code-block'>{'<article>'}</p>
+            <div className='proyecto' onClick={handleClick}>
+                <h2>{name}</h2>
+                <img src={`/proyectos/${image}`} />
+            </div>
+            <p className='code-block'>{'</article>'}</p>
         </article>
     )
 }

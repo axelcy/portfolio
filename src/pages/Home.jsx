@@ -5,7 +5,7 @@ const Home = () => {
         <main>
             <header>
                 <p className='code-block'>{'<h1>'}</p>
-                    <h1 className='code-padding'>Hola, soy <span className='gradiant-text'>Axel</span>!</h1>
+                    <h1 className='code-padding'>Hola, soy <span className='gradient-text'>Axel</span>!</h1>
                 <p className='code-block'>{'</h1>'}</p>
             </header>
             <div>
