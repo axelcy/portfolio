@@ -20,15 +20,15 @@ const Formulario = () => {
         <p className='code-block'>{'<form>'}</p>
             <div className='code-padding'>
                 <article className='login-box'>
-                    <h2>Login</h2>
+                    <h2><span>Contactame</span>!</h2>
                     <form onSubmit={handleSubmit}>
                         <div className='user-box'>
-                            <input type='text' name='user' required autoComplete='off' />
-                            <label>{"<input name='Usuario' />"}</label>
+                            <input type='text' name='email' required autoComplete='off' onChange={handleChange} />
+                            <label>{"<input type='email' />"}</label>
                         </div>
                         <div className='user-box'>
-                            <input type='password' name='pass' required autoComplete='off' />
-                            <label>{"<input name='Contraseña' />"}</label>
+                            <input type='password' name='password' required autoComplete='off' onChange={handleChange}/>
+                            <label>{"<input type='password' />"}</label>
                         </div>
                         <button type='submit' className='nav-link link-form'>{"<button type='submit' />"}</button>
                     </form>

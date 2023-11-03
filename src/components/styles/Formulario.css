@@ -21,10 +21,12 @@
     margin: 0 0 30px;
     padding: 0;
     /* color: #fff; */
-    color: var(--form-color);
+    
     text-align: center;
   }
-  
+  .login-box h2 span{
+    color: var(--form-color);
+  }
   .login-box .user-box {
     position: relative;
   }
