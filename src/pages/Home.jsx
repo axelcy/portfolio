@@ -1,5 +1,6 @@
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
+import SocialMedia from '../components/SocialMedia'
 import './styles/Home.css'
 import { Tooltip } from 'react-tooltip'
 
@@ -37,36 +38,23 @@ const Home = () => {
                     </div>
                     <div>
                         <p className='code-block'>{'<footer>'}</p>
-                            <div className='code-padding social-media'>
-                                <img className='social-media-icon' src='redes/linkedin.png'
-                                    data-tooltip-id="linkedin-tooltip" onClick={() => window.open('https://www.linkedin.com/in/axelcy')} />
-                                    <Tooltip id="linkedin-tooltip" >
-                                        <span className='tooltip-text'>Hacé click para ir a mi perfil de Linkedin!</span>
-                                    </Tooltip>
-                                <img className='social-media-icon' src='redes/github.png' style={{filter: 'invert(1)'}}
-                                    data-tooltip-id="github-tooltip" onClick={() => window.open('https://github.com/axelcy')} />
-                                    <Tooltip id="github-tooltip" >
-                                        <span className='tooltip-text'>Hacé click para ir a mi perfil de GitHub!</span>   
-                                    </Tooltip>
-                                    <img className='social-media-icon' src='redes/discord.png'
-                                    data-tooltip-id="discord-tooltip" onClick={() => navigator.clipboard.writeText('applecy')}/>
-                                    <Tooltip id="discord-tooltip" >
-                                            <div className='discord-tooltip'>
-                                                <span className='tooltip-text'>Hacé click para copiar mi usuario de Discord!</span>
-                                                <Discord />
-                                            </div>
-                                    </Tooltip>
-                                    <img className='social-media-icon' src='redes/gmail.png'
-                                    data-tooltip-id="gmail-tooltip" onClick={() => navigator.clipboard.writeText('axelcy@gmail.com')}/>
-                                    <Tooltip id="gmail-tooltip" >
-                                        <span className='tooltip-text'>axelcy@gmail.com</span>   
-                                    </Tooltip>
-                                    <img className='social-media-icon' src='redes/minecraft.png'
-                                    data-tooltip-id="minecraft-tooltip"/>
-                                    <Tooltip id="minecraft-tooltip" >
-                                        <span className='tooltip-text'>No tengo premium xd</span>   
-                                    </Tooltip>
-                            </div>
+                        <div className='code-padding social-media'>
+                            <SocialMedia name='linkedin' url='https://www.linkedin.com/in/axelcy'
+                                tooltip='Hacé click para ir a mi perfil de Linkedin!' 
+                                />
+                            <SocialMedia name='github' tooltip='Hacé click para ir a mi perfil de GitHub!'
+                                url='https://github.com/axelcy' style={{filter: 'invert(1)'}} 
+                                />
+                            <SocialMedia name='discord' copyText='applecy'
+                                tooltip={
+                                <div className='discord-tooltip'>
+                                    <span className='tooltip-text'>Hacé click para copiar mi usuario de Discord!</span>
+                                    <Discord />
+                                </div>}
+                                />
+                            <SocialMedia name='gmail' tooltip='axelcy@gmail.com' copyText='axelcy@gmail.com' />
+                            <SocialMedia name='minecraft' tooltip='No tengo premium xd' />
+                        </div>
                         <p className='code-block'>{'</footer>'}</p>
                     </div>
                 </div>
