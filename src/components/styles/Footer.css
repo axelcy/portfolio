@@ -1,0 +1,57 @@
+footer {
+    z-index: 10;
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    text-align: left;
+    background: rgba(0, 0, 0, .5);
+    padding: 8px 40px;
+    border-radius: 32px;
+    opacity: .95;
+    backdrop-filter: blur(8px);
+    transition: all .3s ease;
+    max-width: 600px;
+    /* width: 300px; */
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img {
+    height: 100%;
+    --imgWidth: 32px;
+    width: var(--imgWidth);
+    aspect-ratio: 1/1;
+    margin-right: 8px;
+    transition: .5s ease;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer p{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    transition: all 1s;
+}
+
+.heart{
+    animation: heart 4s infinite;
+}
+
+@keyframes heart{
+    0%{
+        color: var(--purple);
+        transform: scale(1);
+    }
+    50%{
+        color: var(--red);
+        transform: scale(1.75);
+    }
+    100%{
+        color: var(--purple);
+        transform: scale(1);
+    }
+}
