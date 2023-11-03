@@ -28,6 +28,7 @@ const Home = () => {
                     <div>
                         <p className='code-block'>{'<p>'}</p>
                             <p className='strong code-padding'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
+                            <p className='strong code-padding'>/* <span className='code-comment'>Portafolio en desarrollo</span> */</p>
                             <p className='code-block code-padding'>{'<a>'}</p>
                                 <a className='strong code-padding-2 github-link' 
                                     href='https://github.com/axelcy/portfolio' target='_blank'>
