@@ -88,7 +88,6 @@ const Home = () => {
 
             <aside className='loginform-home'>
                 <LoginForm />
-                <Discord />
             </aside>
         </main>
     )

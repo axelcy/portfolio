@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './styles/Favoritos.css'
+import Discord from '../components/Discord'
 
 const Favoritos = () => {
     const [session, setSession] = useState({})
@@ -36,6 +37,7 @@ const Favoritos = () => {
             </div>
         <p className='code-block'>{'</from>'}</p>
         </section>
+        <Discord />
     </main>
     )
 }
