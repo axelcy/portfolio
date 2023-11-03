@@ -39,14 +39,20 @@ const Home = () => {
                         <p className='code-block'>{'<footer>'}</p>
                             <div className='code-padding social-media'>
                                 <img className='social-media-icon' src='redes/linkedin.png'
-                                    onClick={() => window.open('https://www.linkedin.com/in/axelcy')} />
+                                    data-tooltip-id="linkedin-tooltip" onClick={() => window.open('https://www.linkedin.com/in/axelcy')} />
+                                    <Tooltip id="linkedin-tooltip" >
+                                        <span className='tooltip-text'>Hacé click para ir a mi perfil de Linkedin!</span>
+                                    </Tooltip>
                                 <img className='social-media-icon' src='redes/github.png' style={{filter: 'invert(1)'}}
-                                    onClick={() => window.open('https://github.com/axelcy')} />
-                                <img className='social-media-icon' src='redes/discord.png'
+                                    data-tooltip-id="github-tooltip" onClick={() => window.open('https://github.com/axelcy')} />
+                                    <Tooltip id="github-tooltip" >
+                                        <span className='tooltip-text'>Hacé click para ir a mi perfil de GitHub!</span>   
+                                    </Tooltip>
+                                    <img className='social-media-icon' src='redes/discord.png'
                                     data-tooltip-id="discord-tooltip" onClick={() => navigator.clipboard.writeText('applecy')}/>
                                     <Tooltip id="discord-tooltip" >
                                             <div className='discord-tooltip'>
-                                                <span>Hacé click para copiar mi usuario de Discord!</span>
+                                                <span className='tooltip-text'>Hacé click para copiar mi usuario de Discord!</span>
                                                 <Discord />
                                             </div>
                                     </Tooltip>
