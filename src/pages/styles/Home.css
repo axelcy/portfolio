@@ -135,3 +135,14 @@ li{
         transform: translateY(0) scale(1);
     }
 }
+
+.discord-tooltip{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discord-tooltip span{
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
+    font-size: 1.1rem;
+}

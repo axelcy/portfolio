@@ -1,6 +1,7 @@
 import Discord from '../components/Discord'
 import LoginForm from '../components/LoginForm'
 import './styles/Home.css'
+import { Tooltip } from 'react-tooltip'
 
 const Home = () => {
     const listaTecnologias = [
@@ -42,7 +43,13 @@ const Home = () => {
                                 <img className='social-media-icon' src='redes/github.png' style={{filter: 'invert(1)'}}
                                     onClick={() => window.open('https://github.com/axelcy')} />
                                 <img className='social-media-icon' src='redes/discord.png'
-                                    onClick={() => window.open('https://github.com/axelcy')} /> applecy
+                                    data-tooltip-id="discord-tooltip" onClick={() => navigator.clipboard.writeText('applecy')}/>
+                                    <Tooltip id="discord-tooltip" >
+                                            <div className='discord-tooltip'>
+                                                <span>Hacé click para copiar mi usuario de Discord!</span>
+                                                <Discord />
+                                            </div>
+                                    </Tooltip>
                             </div>
                         <p className='code-block'>{'</footer>'}</p>
                     </div>
@@ -75,7 +82,7 @@ const Home = () => {
 
             <aside className='loginform-home'>
                 <LoginForm />
-                {/* <Discord /> */}
+                <Discord />
             </aside>
         </main>
     )
