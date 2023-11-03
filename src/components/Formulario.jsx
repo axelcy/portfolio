@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './styles/LoginForm.css'
+import './styles/Formulario.css'
 
-const LoginForm = () => {
+const Formulario = () => {
     const [session, setSession] = useState({})
 
     const handleChange = e => setSession(session => ({...session, [e.target.name]: e.target.value }))
@@ -40,4 +40,4 @@ const LoginForm = () => {
     )
 }
 
-export default LoginForm
+export default Formulario

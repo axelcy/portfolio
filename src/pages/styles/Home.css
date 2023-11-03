@@ -146,3 +146,7 @@ li{
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
     font-size: 1.1rem;
 }
+
+.code-comment{
+    color: rgb(108, 240, 108);
+}

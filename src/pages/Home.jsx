@@ -1,5 +1,5 @@
 import Discord from '../components/Discord'
-import LoginForm from '../components/LoginForm'
+import Formulario from '../components/Formulario'
 import './styles/Home.css'
 import { Tooltip } from 'react-tooltip'
 
@@ -26,11 +26,11 @@ const Home = () => {
                     </header>
                     <div>
                         <p className='code-block'>{'<p>'}</p>
-                            <p className='strong code-padding'>Full Stack Developer /</p>
+                            <p className='strong code-padding'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
                             <p className='code-block code-padding'>{'<a>'}</p>
                                 <a className='strong code-padding-2 github-link' 
-                                    href='https://github.com/axelcy' target='_blank'>
-                                    github.com/axelcy
+                                    href='https://github.com/axelcy/portfolio' target='_blank'>
+                                    github.com/axelcy/portfolio
                                 </a>
                             <p className='code-block code-padding'>{'<a>'}</p>
                         <p className='code-block'>{'</p>'}</p>
@@ -55,6 +55,11 @@ const Home = () => {
                                                 <span className='tooltip-text'>Hacé click para copiar mi usuario de Discord!</span>
                                                 <Discord />
                                             </div>
+                                    </Tooltip>
+                                    <img className='social-media-icon' src='redes/gmail.png'
+                                    data-tooltip-id="gmail-tooltip" onClick={() => navigator.clipboard.writeText('axelcy@gmail.com')}/>
+                                    <Tooltip id="gmail-tooltip" >
+                                        <span className='tooltip-text'>axelcy@gmail.com</span>   
                                     </Tooltip>
                             </div>
                         <p className='code-block'>{'</footer>'}</p>
@@ -87,7 +92,7 @@ const Home = () => {
             </section>
 
             <aside className='loginform-home'>
-                <LoginForm />
+                <Formulario />
             </aside>
         </main>
     )
