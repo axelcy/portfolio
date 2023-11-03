@@ -61,6 +61,11 @@ const Home = () => {
                                     <Tooltip id="gmail-tooltip" >
                                         <span className='tooltip-text'>axelcy@gmail.com</span>   
                                     </Tooltip>
+                                    <img className='social-media-icon' src='redes/minecraft.png'
+                                    data-tooltip-id="minecraft-tooltip"/>
+                                    <Tooltip id="minecraft-tooltip" >
+                                        <span className='tooltip-text'>No tengo premium xd</span>   
+                                    </Tooltip>
                             </div>
                         <p className='code-block'>{'</footer>'}</p>
                     </div>
