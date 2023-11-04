@@ -1,6 +1,7 @@
 import CodeBlock from '../components/CodeBlock'
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
+import ScrollingText from '../components/ScrollingText'
 import SocialMedia from '../components/SocialMedia'
 import TypeWriter from '../components/TypeWriter'
 import './styles/Home.css'
@@ -25,9 +26,10 @@ const Home = () => {
             <section className='home'>
                 {/* -------------------------------------------------- */}
                 <div className='first-section'>
-                    <header>
+                    <header style={{position: 'relative'}}>
                         <CodeBlock tag='h1'>
                             <h1>Hola, soy <span className='gradient-text'>Axel</span>!</h1>
+                            {/* <h1>Hola, soy <ScrollingText textArray={["Axel", "Estudiante", "Web Developer"]} /></h1> */}
                         </CodeBlock>
                     </header>
                     <CodeBlock tag='p'>

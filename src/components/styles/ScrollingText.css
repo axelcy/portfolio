@@ -1,0 +1,41 @@
+/* VerticalScrollingText.css */
+.scrolling-text-container {
+    position: absolute;
+    /* position: relative; */
+    top: calc(20%);
+    right: -222px;
+    /* transform: translate(-50%, -50%); */
+    overflow: hidden;
+    /* Adjust the width to your preference */
+    width: 500px;
+    /* Adjust the height to your preference */
+    height: 100px;
+    border: 1px solid #ccc;
+}
+
+.scrolling-text {
+    position: absolute;
+    animation: scroll-text 5s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateY(0);
+    }
+    5%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(0);
+    }
+    95%{
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
