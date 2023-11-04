@@ -2,6 +2,7 @@ import CodeBlock from '../components/CodeBlock'
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
 import SocialMedia from '../components/SocialMedia'
+import TypeWriter from '../components/TypeWriter'
 import './styles/Home.css'
 
 const Home = () => {
@@ -30,7 +31,6 @@ const Home = () => {
                     </header>
                     <CodeBlock tag='p'>
                         <p className='strong'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
-                        <p className='strong'>/* <span className='code-comment'>Portfolio en desarrollo</span> */</p>
                         <CodeBlock tag='a'>
                             <p>
                                 <span className='code-block' style={{display: 'inline'}}>
@@ -67,11 +67,11 @@ const Home = () => {
                 {/* -------------------------------------------------- */}
                 <div className='flex-right padding-right'>
                     <div>
-                        <CodeBlock tag='h2' right>
-                            <h2>Mis <span className='gradient-text-3'>Tecnologías</span></h2>
+                        <CodeBlock tag='h2' right removeContainer>
+                            <h2 className='code-padding-right'>Mis <span className='gradient-text-3'>Tecnologías</span></h2>
                         </CodeBlock>
-                        <CodeBlock tag='ul' right>
-                            <ul className='strong'>
+                        <CodeBlock tag='ul' right removeContainer>
+                            <ul className='strong code-padding-right'>
                                 {
                                     listaTecnologias.map((tecnologia, index) => <li key={index}>{tecnologia}</li>)
                                 }
@@ -80,11 +80,18 @@ const Home = () => {
                     </div>
                 </div>
                 {/* -------------------------------------------------- */}
-                <img className='scroll-arrow' src='/scroll-arrow.png'
+            </section>
+            <div className='about-me'>
+                <CodeBlock>
+                    <span className='strong'>
+                        <TypeWriter text='Tengo 17 años, soy estudiante de ORT Argentina.' />
+                    </span>
+                </CodeBlock>
+            </div>
+            <img className='scroll-arrow' src='/scroll-arrow.png'
                     alt='scroll-arrow'
                     onClick={() => window.scrollTo({top: 1000, behavior: 'smooth'})}
                 />
-            </section>
 
             <aside className='loginform-home'>
                 <main style={{alignItems: 'center', paddingLeft: 0}}>

@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-const CodeBlock = ({ children, tag = 'span', right = false, removePadding = false }) => {
+const CodeBlock = ({ children, tag = 'span', right = false, removePadding = false, removeContainer = false }) => {
 
     const getClassName = () => {
         var className = ''
@@ -14,7 +14,10 @@ const CodeBlock = ({ children, tag = 'span', right = false, removePadding = fals
     return (
         <>
             <p className='code-block'>{`<${tag}>`} </p>
-                { <div className={getClassName()}> {children} </div> }
+                {
+                    removeContainer ? <>{children}</> :
+                    <div className={getClassName()}> {children} </div>
+                }
             <p className='code-block'>{`</${tag}>`}</p>
         </>
     )
