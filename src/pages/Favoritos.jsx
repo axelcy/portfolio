@@ -15,11 +15,13 @@ const Favoritos = () => {
                     <h1 className='code-padding'>Proyectos <span className='gradient-text'>favoritos</span>!</h1>
                 <p className='code-block'>{'<h1>'}</p>
             </header>
-            {
+            <section className='lista-proyectos'>
+                {
                 useProyectos().filter(({starred}) => starred).map(({name, image, url, starred}, index) => (
                     <Proyecto key={index} index={index} name={name} image={image} url={url} starred={starred} />
-                ))
-            }
+                    ))
+                }
+            </section>
             {
                 useProyectos().filter(({starred}) => starred).length === 0 && 
                 <div className='sin-favoritos'>
