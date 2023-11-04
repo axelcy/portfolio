@@ -84,13 +84,7 @@ const Home = () => {
                 </div>
                 {/* -------------------------------------------------- */}
             </section>
-            <div className='about-me'>
-                <CodeBlock>
-                    <span className='strong'>
-                        <TypeWriter text='Tengo 17 años, soy estudiante de ORT Argentina.' />
-                    </span>
-                </CodeBlock>
-            </div>
+            
             <img className='scroll-arrow' src='/scroll-arrow.png'
                     alt='scroll-arrow'
                     onClick={() => window.scrollTo({top: 1000, behavior: 'smooth'})}
