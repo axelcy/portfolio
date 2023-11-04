@@ -30,6 +30,9 @@ const Home = () => {
                         </CodeBlock>
                     </header>
                     <CodeBlock tag='p'>
+                        <span className='strong'>
+                            <TypeWriter text='Tengo 17 años, soy estudiante de ORT Argentina.' />
+                        </span>
                         <p className='strong'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
                         <CodeBlock tag='a'>
                             <p>

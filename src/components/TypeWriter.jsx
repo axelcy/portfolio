@@ -10,7 +10,6 @@ const TypeWriter = ({ text }) => {
 
     useEffect(() => {
         const typewriter = typewriterRef.current
-        // console.log(`#${typewriterid}`)
         new Typewriter(typewriter, {
             strings: text,
             autoStart: true,
