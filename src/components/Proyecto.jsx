@@ -16,7 +16,7 @@ const Proyecto = ({ name, image, url, starred, index }) => {
     const handleMouseEnter = () => setIsHovered(true)
     const handleMouseLeave = () => setIsHovered(false)
     
-
+    // Al darle hover a la imagen, que aparezca un boton para ir a la pagina
     return (
             <article>
                 <p className={`code-block ${isHovered ? 'hovered' : ''}`} >{"<article>"}</p>

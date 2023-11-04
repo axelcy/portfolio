@@ -1,8 +1,8 @@
+import CodeBlock from '../components/CodeBlock'
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
 import SocialMedia from '../components/SocialMedia'
 import './styles/Home.css'
-import { Tooltip } from 'react-tooltip'
 
 const Home = () => {
     const listaTecnologias = [
@@ -13,6 +13,9 @@ const Home = () => {
         'MsSQL',
         'Figma',
         'GitHub',
+        // 'React Native',
+        // 'DotNet',
+        // 'MVC',
     ]
 
     return (
@@ -21,28 +24,28 @@ const Home = () => {
                 {/* -------------------------------------------------- */}
                 <div className='first-section'>
                     <header>
-                        <p className='code-block'>{'<h1>'}</p>
-                            <h1 className='code-padding'>Hola, soy <span className='gradient-text'>Axel</span>!</h1>
-                        <p className='code-block'>{'</h1>'}</p>
+                        <CodeBlock tag='h1'>
+                            <h1>Hola, soy <span className='gradient-text'>Axel</span>!</h1>
+                        </CodeBlock>
                     </header>
-                    <div>
-                        <p className='code-block'>{'<p>'}</p>
-                            <p className='strong code-padding'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
-                            <p className='strong code-padding'>/* <span className='code-comment'>Portafolio en desarrollo</span> */</p>
-                            <p className='code-block code-padding'>{'<a>'}</p>
-                                <p>
-                                    <span className='code-block code-padding-2' style={{display: 'inline'}}>{'onClick={ '}
+                    <CodeBlock tag='p'>
+                        <p className='strong'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
+                        <p className='strong'>/* <span className='code-comment'>Portfolio en desarrollo</span> */</p>
+                        <CodeBlock tag='a'>
+                            <p>
+                                <span className='code-block' style={{display: 'inline'}}>
+                                    {'onClick={ '}
                                     <a className='strong github-link' 
                                         href='https://github.com/axelcy/portfolio' target='_blank'>
                                         github.com/axelcy/portfolio
-                                    </a>{' }'}</span>
-                                </p>
-                            <p className='code-block code-padding'>{'<a>'}</p>
-                        <p className='code-block'>{'</p>'}</p>
-                    </div>
-                    <div>
-                        <p className='code-block'>{'<footer>'}</p>
-                        <div className='code-padding social-media'>
+                                    </a>
+                                    {' }'}
+                                </span>
+                            </p>
+                        </CodeBlock>
+                    </CodeBlock>
+                    <CodeBlock tag='footer' removePadding>
+                        <div className='social-media'>
                             <SocialMedia name='linkedin' url='https://www.linkedin.com/in/axelcy'
                                 tooltip='Hacé click para ir a mi perfil de Linkedin!' 
                                 />
@@ -57,28 +60,23 @@ const Home = () => {
                                 </div>}
                                 />
                             <SocialMedia name='gmail' tooltip='axelcy@gmail.com' copyText='axelcy@gmail.com' />
-                            <SocialMedia name='minecraft' tooltip='No tengo premium xd' />
+                            {/* <SocialMedia name='minecraft' tooltip='No tengo premium xd' /> */}
                         </div>
-                        <p className='code-block'>{'</footer>'}</p>
-                    </div>
+                    </CodeBlock>
                 </div>
                 {/* -------------------------------------------------- */}
                 <div className='flex-right padding-right'>
                     <div>
-                    <div>
-                        <p className='code-block'>{'<h2>'}</p>
-                        <h2 className='code-padding code-padding-right'>Mis <span className='gradient-text-3'>Tecnologías</span></h2>
-                        <p className='code-block'>{'</h2>'}</p>
-                    </div>
-                    <div>
-                        <p className='code-block'>{'<ul>'}</p>
-                        <ul className='strong code-block code-padding-right'>
-                            {
-                                listaTecnologias.map((tecnologia, index) => <li key={index}>{tecnologia}</li>)
-                            }
-                        </ul>
-                        <p className='code-block'>{'</ul>'}</p>
-                    </div>
+                        <CodeBlock tag='h2' right>
+                            <h2>Mis <span className='gradient-text-3'>Tecnologías</span></h2>
+                        </CodeBlock>
+                        <CodeBlock tag='ul' right>
+                            <ul className='strong'>
+                                {
+                                    listaTecnologias.map((tecnologia, index) => <li key={index}>{tecnologia}</li>)
+                                }
+                            </ul>
+                        </CodeBlock>
                     </div>
                 </div>
                 {/* -------------------------------------------------- */}
@@ -89,6 +87,13 @@ const Home = () => {
             </section>
 
             <aside className='loginform-home'>
+                <main style={{alignItems: 'center', paddingLeft: 0}}>
+                    <header>
+                        <CodeBlock tag='h2'>
+                            <h2>¿ <span className='gradient-text'>Tenés dudas</span> ?</h2>
+                        </CodeBlock>
+                    </header>
+                </main>
                 <Formulario />
             </aside>
         </main>

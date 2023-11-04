@@ -19,8 +19,15 @@ nav{
     background-attachment: fixed;
     background-size: cover;
 }
-
-.nav-link-section{
+@media (width < 768px){
+    nav{
+        width: 100vw;
+        height: fit-content;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+.nav-link-container{
     display: flex;
     flex-direction: row;
     align-items: center;
