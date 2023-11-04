@@ -88,7 +88,7 @@ const Home = () => {
 
             <img className='scroll-arrow' src='/scroll-arrow.png'
                     alt='scroll-arrow'
-                    onClick={() => window.scrollTo({top: 1000, behavior: 'smooth'})}
+                    onClick={() => window.scrollTo({top: 950, behavior: 'smooth'})}
                 />
 
             <aside className='loginform-home'>
