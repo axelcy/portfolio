@@ -1,21 +1,29 @@
 import "./styles/Proyecto.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Star } from "../assets/Icons";
 
-const Proyecto = ({ name, image, url }) => {
+const Proyecto = ({ name, image, url, starred, index }) => {
+
     const [isHovered, setIsHovered] = useState(false)
+    const [isStarred, setIsStarred] = useState(starred)
 
+    useEffect(() => localStorage.setItem(`starred-${index}`, isStarred), [isStarred])
+    
+    const handleStarred = () => setIsStarred(!isStarred)
     const handleClick = () => window.open(url, "_blank")
-
+    
     const handleMouseEnter = () => setIsHovered(true)
     const handleMouseLeave = () => setIsHovered(false)
+    
 
     return (
             <article>
                 <p className={`code-block ${isHovered ? 'hovered' : ''}`} >{"<article>"}</p>
-                    <div className="proyecto" onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <div className="proyecto" style={{userSelect: 'none'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        <Star starred={isStarred} onClick={handleStarred} />
                         <h2>{name}</h2>
-                        <img src={`/proyectos/${image}`} />
+                        <img src={`/proyectos/${image}`} onClick={handleClick} />
                     </div>
                 <p className={`code-block ${isHovered ? 'hovered' : ''}`} >{"</article>"}</p>
             </article>

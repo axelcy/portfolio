@@ -11,7 +11,7 @@ const Home = () => {
         'Express.JS',
         'TypeScript',
         'MsSQL',
-        'Sigma',
+        'Figma',
         'GitHub',
     ]
 
