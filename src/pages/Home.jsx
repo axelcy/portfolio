@@ -29,7 +29,6 @@ const Home = () => {
                     <header style={{position: 'relative'}}>
                         <CodeBlock tag='h1'>
                             <h1>Hola, soy <span className='gradient-text'>Axel</span>!</h1>
-                            {/* <h1>Hola, soy <ScrollingText textArray={["Axel", "Estudiante", "Web Developer"]} /></h1> */}
                         </CodeBlock>
                     </header>
                     <CodeBlock tag='p'>
