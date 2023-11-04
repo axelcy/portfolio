@@ -30,7 +30,7 @@ const Formulario = () => {
                             <input type='password' name='password' required autoComplete='off' onChange={handleChange}/>
                             <label>{"<input type='password' />"}</label>
                         </div>
-                        <button type='submit' className='nav-link link-form'>{"<button type='submit' />"}</button>
+                        <button type='submit' className='nav-link form-link link-form'>{"<button type='submit' />"}</button>
                     </form>
                 </article>
             </div>

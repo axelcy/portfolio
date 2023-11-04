@@ -33,3 +33,6 @@ body{
   background-size: cover;
   /* position: fixed; */
 }
+#root{
+  /* background: linear-gradient(#141e30, #243b55); */
+}

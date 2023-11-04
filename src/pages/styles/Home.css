@@ -13,6 +13,21 @@ main{
     padding-bottom: 10rem;
     position: relative;
 }
+.first-section{
+    padding-left: 15rem;
+}
+@media (width < 768px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        /* height: calc(100vh - 60px); */
+        padding-bottom: 10rem;
+        position: relative;
+    }
+    .first-section{
+        padding-left: 7rem;
+    }
+}
 
 .scroll-arrow{
     position: absolute;
@@ -47,9 +62,7 @@ main{
     flex: 1;
 }
 
-.first-section{
-    padding-left: 15rem;
-}
+
 
 .code-block{
     color: var(--codeColor);
