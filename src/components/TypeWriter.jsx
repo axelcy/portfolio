@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { useEffect, useId } from 'react'
 import Typewriter from 'typewriter-effect/dist/core'
 import { v4 as uuidv4 } from 'uuid'
@@ -5,10 +6,12 @@ import { v4 as uuidv4 } from 'uuid'
 
 const TypeWriter = ({ text }) => {
     const typewriterid = uuidv4()
+    const typewriterRef = useRef()
 
     useEffect(() => {
-        console.log(`#${typewriterid}`)
-        new Typewriter(`#${typewriterid}`, {
+        const typewriter = typewriterRef.current
+        // console.log(`#${typewriterid}`)
+        new Typewriter(typewriter, {
             strings: text,
             autoStart: true,
             delay: 50,
@@ -17,7 +20,7 @@ const TypeWriter = ({ text }) => {
     }, [])
 
     return (
-        <div id={typewriterid} className='typewriter'></div>
+        <div id={typewriterid} ref={typewriterRef} className='typewriter'></div>
     )
 }
 
