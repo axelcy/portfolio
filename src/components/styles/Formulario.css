@@ -82,6 +82,7 @@
   letter-spacing: 2px;
   border-radius: 5px;
   border: solid 1px var(--form-color-alpha);
+  margin-left: 1rem;
 }
 
 .link-form:hover::after {
