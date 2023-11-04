@@ -103,7 +103,7 @@ const Home = () => {
             </aside>
         </main>
         <div className='home-bottom'>
-            LLegaste al final <span>{'<3'}</span> 
+            Llegaste al final <span>{'<3'}</span> 
         </div>
         </>
     )
