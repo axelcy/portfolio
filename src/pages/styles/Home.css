@@ -6,6 +6,20 @@ main{
     justify-content: center;
 }
 
+.home-bottom{
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.home-bottom{
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.home-bottom span{
+    color: var(--red);
+}
+
 .home{
     display: flex;
     flex-direction: row;

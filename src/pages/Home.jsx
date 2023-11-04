@@ -20,6 +20,7 @@ const Home = () => {
     ]
 
     return (
+        <>
         <main>
             <section className='home'>
                 {/* -------------------------------------------------- */}
@@ -84,7 +85,7 @@ const Home = () => {
                 </div>
                 {/* -------------------------------------------------- */}
             </section>
-            
+
             <img className='scroll-arrow' src='/scroll-arrow.png'
                     alt='scroll-arrow'
                     onClick={() => window.scrollTo({top: 1000, behavior: 'smooth'})}
@@ -101,6 +102,10 @@ const Home = () => {
                 <Formulario />
             </aside>
         </main>
+        <div className='home-bottom'>
+            LLegaste al final <span>{'<3'}</span> 
+        </div>
+        </>
     )
 }
 
