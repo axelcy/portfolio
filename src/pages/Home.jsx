@@ -1,7 +1,6 @@
 import CodeBlock from '../components/CodeBlock'
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
-import ScrollingText from '../components/ScrollingText'
 import SocialMedia from '../components/SocialMedia'
 import TypeWriter from '../components/TypeWriter'
 import './styles/Home.css'
