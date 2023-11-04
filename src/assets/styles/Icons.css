@@ -14,3 +14,11 @@
 .star.starred {
     fill: yellow;
 }
+
+.sad-face-icon{
+    --tamaño: 18rem;
+    height: var(--tamaño);
+    width: var(--tamaño);
+    margin: auto;
+    stroke-width: 1.7;
+}

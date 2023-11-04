@@ -1,0 +1,17 @@
+.sin-favoritos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-text{
+    position: relative;
+}
+.star-text svg{
+    cursor: default;
+    position: absolute;
+    top: -3px;
+    left: 5px;
+}

@@ -3,6 +3,7 @@ import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
 import useProyectos from '../hooks/useProyectos'
 import Proyecto from '../components/Proyecto'
+import { SadFace, Star } from '../assets/Icons'
 
 const Favoritos = () => {
     return(
@@ -18,6 +19,14 @@ const Favoritos = () => {
                 useProyectos().filter(({starred}) => starred).map(({name, image, url, starred}, index) => (
                     <Proyecto key={index} index={index} name={name} image={image} url={url} starred={starred} />
                 ))
+            }
+            {
+                useProyectos().filter(({starred}) => starred).length === 0 && 
+                <div className='sin-favoritos'>
+                    <SadFace />
+                    <h3>Parece que no tenés ningún proyecto en favoritos...</h3>
+                    <p className='strong'>Prueba agregar algunos con <span className='star-text'><Star /></span></p>
+                </div>
             }
         </main>
     )
