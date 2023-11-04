@@ -30,10 +30,13 @@ const Home = () => {
                             <p className='strong code-padding'>/* <span className='code-comment'>Full Stack Developer</span> */</p>
                             <p className='strong code-padding'>/* <span className='code-comment'>Portafolio en desarrollo</span> */</p>
                             <p className='code-block code-padding'>{'<a>'}</p>
-                                <a className='strong code-padding-2 github-link' 
-                                    href='https://github.com/axelcy/portfolio' target='_blank'>
-                                    github.com/axelcy/portfolio
-                                </a>
+                                <p>
+                                    <span className='code-block code-padding-2' style={{display: 'inline'}}>{'onClick={ '}
+                                    <a className='strong github-link' 
+                                        href='https://github.com/axelcy/portfolio' target='_blank'>
+                                        github.com/axelcy/portfolio
+                                    </a>{' }'}</span>
+                                </p>
                             <p className='code-block code-padding'>{'<a>'}</p>
                         <p className='code-block'>{'</p>'}</p>
                     </div>

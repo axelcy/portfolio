@@ -33,34 +33,6 @@ h3{
     font-size: 1.5rem;
 }
 
-.github-link{
-    cursor: pointer;
-    transition: .5s all ease;
-    color: var(--white);
-    font-size: 1.1rem;
-    text-decoration: underline;
-}
-
-.github-link:hover{
-    animation: link-hover 1.5s infinite;
-    text-decoration: none;
-}
-
-@keyframes link-hover{
-    0%{
-        color: var(--white);
-        font-size: 1.1rem;
-    }
-    50%{
-        color: var(--blue);
-        font-size: calc(1.1rem * 1.05);
-    }
-    100%{
-        color: var(--white);
-        font-size: 1.1rem;
-    }
-}
-
 @media (width < 768px){
     .padding-left {
         padding-left: 7rem;
