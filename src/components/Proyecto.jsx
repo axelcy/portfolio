@@ -23,7 +23,8 @@ const Proyecto = ({ name, image, url, starred, index }) => {
                     <div className="proyecto" style={{userSelect: 'none'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         <Star starred={isStarred} onClick={handleStarred} />
                         <h2>{name}</h2>
-                        <img src={`/proyectos/${image}`} onClick={handleClick} />
+                        <img src={`/proyectos/${image}`}  />
+                        <span className='texto' onClick={handleClick}>Ir al sitio web</span>
                     </div>
                 <p className={`code-block ${isHovered ? 'hovered' : ''}`} >{"</article>"}</p>
             </article>
