@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     text-align: center;
-    animation: tecnologias 2s infinite ease-in-out;
+    animation: tecnologias 3s infinite ease-in-out;
 }
 
 @keyframes tecnologias{
