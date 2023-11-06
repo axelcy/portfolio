@@ -2,23 +2,12 @@ import CodeBlock from '../components/CodeBlock'
 import Discord from '../components/Discord'
 import Formulario from '../components/Formulario'
 import SocialMedia from '../components/SocialMedia'
+import Tecnologia from '../components/Tecnologia'
 import TypeWriter from '../components/TypeWriter'
+import { tecnologias } from '../mocks/tecnologias'
 import './styles/Home.css'
 
 const Home = () => {
-    const listaTecnologias = [
-        'React.JS',
-        'Node.JS',
-        'Express.JS',
-        'TypeScript',
-        'MsSQL',
-        'Figma',
-        'GitHub',
-        // 'React Native',
-        // 'DotNet',
-        // 'MVC',
-    ]
-
     return (
         <>
         <main>
@@ -75,9 +64,11 @@ const Home = () => {
                             <h2 className='code-padding-right'>Mis <span className='gradient-text-3'>Tecnologías</span></h2>
                         </CodeBlock>
                         <CodeBlock tag='ul' right removeContainer>
-                            <ul className='strong code-padding-right'>
+                            <ul className='strong code-padding-right tecnologias-container'>
                                 {
-                                    listaTecnologias.map((tecnologia, index) => <li key={index}>{tecnologia}</li>)
+                                    tecnologias.map(({ name, image }, index) => (
+                                        <Tecnologia key={index} name={name} image={image} />
+                                    ))
                                 }
                             </ul>
                         </CodeBlock>
@@ -86,7 +77,7 @@ const Home = () => {
                 {/* -------------------------------------------------- */}
             </section>
 
-            <img className='scroll-arrow' src='/scroll-arrow.png'
+            <img className='scroll-arrow' src='/scroll-arrow.webp'
                     alt='scroll-arrow'
                     onClick={() => window.scrollTo({top: 950, behavior: 'smooth'})}
                 />

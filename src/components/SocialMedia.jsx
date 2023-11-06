@@ -7,7 +7,7 @@ const SocialMedia = ({ name, image, tooltip, url, copyText, style = {} }) => {
     }
     return (
         <div>
-            <img className='social-media-icon' src={image ? image : `redes/${name}.png`} style={style}
+            <img className='social-media-icon' src={image ? image : `redes/${name}.webp`} style={style}
             data-tooltip-id={`${name}-tooltip`} onClick={handleClick} />
             <Tooltip id={`${name}-tooltip`} >
                 <span className='tooltip-text'>{tooltip}</span>
